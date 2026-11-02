@@ -1,0 +1,1122 @@
+/* ^===>GLOABAL STYLES <===^ */
+* {
+    box-sizing: border-box;
+    font-family: Exo, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+
+.text-center {
+
+    text-align: center;
+
+}
+
+
+.m-auto {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+
+
+.d-flex {
+
+    display: flex;
+
+}
+
+.just-content-center {
+
+    justify-content: center;
+
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+
+.flex-warp {
+    flex-wrap: wrap;
+}
+
+
+.align-items-center {
+
+    align-items: center;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2a2a2e;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.m-50px {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+button {
+    background-color: #8E51FF;
+    color: white;
+    width: 70%;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+}
+
+/*====> START Navbar <==== */
+
+.navbar-wrapper {
+    width: 100%;
+    background-color: #f5f2ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid #e3e5ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+
+.nav-inner {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 10px;
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #8338ec;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0%;
+}
+
+.brand-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    color: #5b6270;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #8338ec;
+    border-bottom: 2px solid #8338ec;
+    font-weight: 600;
+}
+
+/*====> END Navbar <==== */
+
+
+/*====> START HEAD SECTION <==== */
+
+.contanir {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+
+
+}
+
+.image-card {
+    width: 40%;
+}
+
+.inner-image {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #E0E3E7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.badge {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: #8338ec;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.content-card {
+    width: 55%;
+}
+
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+}
+
+.tags span {
+    background-color: #a66bf5;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 15px;
+}
+
+.inner-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #333;
+}
+
+h1 span {
+    color: #8338ec;
+
+}
+
+.inner-content p {
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #333;
+}
+
+.desc {
+    font-size: 14px;
+    color: #5b6270;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.save {
+    background-color: #fde7ea;
+    color: #c81e3a;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #e7000b;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.pay-text {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-main {
+    background-color: #8338ec;
+    color: #ffffff;
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn-sub {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 2px solid #e3e5ec;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-main:hover {
+    background-color: #6d28d9;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.btn-sub:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+
+}
+
+/*====> END HEAD SECTION <==== */
+
+
+/*====> Start Hero Section <====*/
+
+.header {
+
+    background-color: #F7F5FF;
+
+}
+
+.hero-section {
+
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333;
+}
+
+.hero-content h2 span {
+    color: #7F22FE;
+}
+
+.specification-card {
+
+    width: 33%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+
+}
+
+.specification-section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.specification-card .inner {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.specification-card .inner img {
+    background-color: #EDE9FE;
+    width: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.camera {
+    color: #7F22FE;
+}
+
+.Photography {
+    color: #007595;
+}
+
+.Endurance {
+    color: #007A55;
+}
+
+.Connectivity {
+    color: #CA3500;
+}
+
+.Safety{
+color: #0069A8;
+}
+
+
+.Performance{
+color:#EC003F ;
+}
+
+.specification-card .inner .img2 {
+    background-color: #CEFAFE;
+}
+
+.specification-card .inner .img3 {
+    background-color: #D0FAE5;
+}
+
+.specification-card .inner .img4 {
+    background-color: #FFEDD4;
+}
+
+.specification-card .inner .img5 {
+    background-color: #DFF2FE;
+}
+
+.specification-card .inner .img6 {
+    background-color: #FFE4E6;
+}
+
+.specification-card .inner span {
+    display: block;
+
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.specification-card .inner h3 {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.specification-card .inner p {
+    margin-top: 10px;
+    line-height: 1.5
+}
+
+.specification-card .inner .keys {
+    font-size: 30px;
+    color: #6B4EA0;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.specification-card .inner .description {
+    margin-top: 2px;
+    color: #897789;
+}
+
+.explore {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.explore .inner {
+    background-color: #7F22FE;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.explore .btn {
+    width: 200px;
+    background-color: #F5F3FF;
+    color: #9708E7;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 20px;
+    cursor: pointer;
+
+}
+
+.explore span {
+
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #ddd6ff;
+}
+
+.explore h2 {
+    margin: auto;
+    margin-left: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+
+}
+
+.explore p {
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+/*End Hero Section*/
+/*========================*/
+
+
+/* start related products */
+.related-products {
+    background-color: #F7F5FF;
+    padding: 20px;
+}
+
+
+.drone-related-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #333;
+
+}
+
+.span-set {
+    color: #7F22FE;
+}
+
+.drone-related-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333;
+}
+
+.drone-products-card {
+    width: 25%;
+    padding: 12px;
+}
+
+.drone-products-card .drone-inner-box {
+    background-color: white;
+    border: 2px solid #F0F1F4;
+    border-radius: 20px;
+    padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.drone-products-card .drone-title-1 {
+    background-color: #00BBA7;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.drone-products-card .drone-title-2 {
+    background-color: #00C950;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.drone-products-card .drone-title-3 {
+    background-color: #00B8DB;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.drone-products-card .drone-title-4 {
+    background-color: #FF6900;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.drone-products-card img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.drone-products-card h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.drone-products-card p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 13px;
+    color: #4B5563;
+    flex-grow: 1;
+}
+
+.drone-products-card .drone-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.drone-products-card .drone-price-row span:first-child {
+    font-size: 22px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.drone-products-card .drone-cart-btn {
+    border-radius: 12px;
+    background-color: #7F22FE;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.drone-products-card .drone-cart-btn:hover {
+    background-color: #6B19E0;
+}
+
+.drone-view-btn {
+    width: 220px;
+    padding: 15px;
+    background-color: transparent;
+    color: #7F22FE;
+    border: 1px solid #7F22FE;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drone-view-btn:hover {
+    color: white;
+    background-color: #7F22FE;
+}
+
+/* end related products */
+
+/* start reviews section */
+.drone-reviews-section {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.drone-reviews-title-wrap {
+    margin-bottom: 40px;
+}
+
+.drone-reviews-title-wrap h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.drone-reviews-title-wrap h2 span {
+    color: #8E51FF;
+}
+
+.drone-reviews-title-wrap p {
+    color: #4B5563;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.drone-reviews-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.drone-rating-sidebar {
+    width: 32%;
+}
+
+.drone-rating-card {
+    background-color: blueviolet;
+    color: #FFFFFF;
+    border-radius: 24px;
+    padding: 30px 24px;
+}
+
+.drone-score-big {
+    font-size: 56px;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.drone-stars-row img,
+.drone-stars img {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+}
+
+.drone-reviews-count {
+    font-size: 14px;
+    color: #E5E7EB;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.drone-rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.drone-bar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.drone-bar-track {
+    flex-grow: 1;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.drone-bar-fill {
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.drone-bar-fill.fill-78 {
+    width: 78%;
+}
+
+.drone-bar-fill.fill-15 {
+    width: 15%;
+}
+
+.drone-bar-fill.fill-1-5 {
+    width: 1.5%;
+}
+
+.drone-bar-fill.fill-0-5 {
+    width: 0.5%;
+}
+
+.drone-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 25px 0;
+}
+
+.drone-quality-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drone-quality-box span {
+    font-size: 24px;
+    font-weight: 800;
+    display: block;
+}
+
+.drone-quality-box p {
+    font-size: 12px;
+    color: #E5E7EB;
+    margin: 4px 0 0 0;
+}
+
+.drone-feed-column {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drone-profile-review {
+    background-color: #FFFFFF;
+    border: 2px solid #F0F1F4;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.drone-avatar {
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.drone-profile-text h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #333;
+}
+
+.drone-role-title {
+    margin: 2px 0 6px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+}
+
+.drone-rating-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111827;
+    margin-left: 8px;
+}
+
+.drone-verified-badge {
+    background-color: #7282Ef;
+    color: #E2DEd2;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.drone-time-ago {
+    font-size: 12px;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.drone-review-text {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.drone-btn-wrapper {
+    margin-top: 15px;
+}
+
+.drone-custom-btn {
+    background-color: transparent;
+    color: #8E51FF;
+    border: 1px solid #8E51FF;
+    border-radius: 12px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40%;
+}
+
+.drone-custom-btn:hover {
+    background-color: #8E51FF;
+    color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+    .drone-reviews-container {
+        flex-direction: column;
+    }
+
+    .drone-rating-sidebar,
+    .drone-feed-column {
+        width: 100%;
+    }
+}
+
+
+
+/* Start Footer Section */
+.drone-footer-section {
+    width: 100%;
+    background-color: #0b1329;
+    color: #9CA3AF;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.drone-footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.drone-footer-col {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.drone-brand-col {
+    width: 28%;
+}
+
+.drone-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.drone-footer-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.drone-brand-col h4,
+.drone-footer-col h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.drone-brand-col p {
+
+    color: #9CA3AF;
+    margin: 0 0 20px 0;
+}
+
+.drone-social-media {
+    display: flex;
+    gap: 12px;
+}
+
+.drone-social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drone-social-icon:hover {
+    background-color: #7F22FE;
+}
+
+.drone-social-icon img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.drone-footer-col a {
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.drone-footer-col a:hover {
+    color: #FFFFFF;
+}
+
+.drone-footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.drone-copyright-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drone-copyright-row p {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+.drone-payments {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.drone-payment-img {
+    height: 28px;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .drone-brand-col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .drone-footer-col {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .drone-footer-col {
+        width: 100%;
+    }
+
+    .drone-copyright-row {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* End Footer Section  */
